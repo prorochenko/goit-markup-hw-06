@@ -590,6 +590,17 @@
             </li>
             </ul>
           </div>
+          <div>
+            <p class="subscribe-footer">Підпишіться на розсилку</p>
+            <div class="flex-subscribe">
+              <input class="subsctibe-input" type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="email"/>
+            <button class="subscribe" type="submit" >Підписатися
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+            </div>
+          </div>
       </div>
       </div>
     </footer>
@@ -603,21 +614,38 @@
       <use href="./images/sprite.svg#icon-Vector"></use>
     </svg></button>
       <form action="" class="js-speaker-form">
-        <div>
-          <label for="name">Ім'я</label>
-          <input type="text" name="name" id="name" />
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" />
-          <label for="mail">Пошта</label>
-          <input type="email" name="mail" id="mail" />
-          <label for="comment">Коментар</label>
-          <textarea name="comment" id="comment" cols="" rows="" placeholder="Введіть текст"></textarea>  
+        <strong class="title-form">Залиште свої дані, ми вам передзвонимо</strong>
+        <div class="form-field">
+          <label class="name-field" for="name">Ім'я</label>
+          <input class="labelfield"type="text" name="name" id="name" autocomplete="given-name" autofocus />
+          </div>
+          <div class="form-field">
+          <label class="name-field" for="tel">Телефон</label>
+          <input class="labelfield" type="tel" name="tel" id="tel" autocomplete="tel"/>
+          </div>
+          <div class="form-field">
+            <label class="name-field" for="mail">Пошта</label>
+          <input class="labelfield" type="email" name="mail" id="mail" autocomplete="email"/>
         </div>
-        <input type="checkbox" name="terms" id="terms">
-        <label for="terms">Погоджуюся з розсилкою та приймаю <a class="link-term" href="google.com">Умови договору</a></label>
-        
+        <div class="form-field">
+          <label class="name-field" for="comment">Коментар</label>
+          <textarea class="labelfield" name="comment" id="comment" cols="10" rows="10" placeholder="Введіть текст"></textarea>  
+        </div>
+        <div class="termscondition">
 
-        <button type="submit">Відправити</button>
+          <label class="checkbox">
+            <input class="checkboxbox" type="checkbox" name="terms">
+            <!-- <svg class="social-icon-footer" width="20" height="20">
+              <use href="./images/sprite.svg#icon-linkedin"></use>
+            </svg> -->
+            <span>Погоджуюся з розсилкою та приймаю <a class="link-term" href="google.com" target="_blank">Умови договору</a></span>
+          </label>
+          
+        <!-- <input class="checkboxbox" type="checkbox" name="terms" id="terms">
+        <label class="checkbox" for="terms">Погоджуюся з розсилкою та приймаю <a class="link-term" href="google.com">Умови договору</a></label> -->
+        </div>
+
+        <button class="button field" type="submit">Відправити</button>
 
       </form>
   </div>  
