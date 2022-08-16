@@ -1043,6 +1043,7 @@ textarea.labelfield{
 .termscondition{
   margin-bottom: 30px;
   display: flex;
+  margin-left: 13px; 
 }
 
 .button.field{
@@ -1058,9 +1059,9 @@ textarea.labelfield{
   border: 0px;
   color: #FFFFFF;
   font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.87;
+  margin: 0 auto;
 }
 
 .link-term{
