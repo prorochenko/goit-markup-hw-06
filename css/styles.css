@@ -1002,7 +1002,7 @@ textarea.labelfield{
 }
 
 .icon-uncheck {
-  transition-property: opacity;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1015,7 +1015,7 @@ textarea.labelfield{
   opacity: 0;
   fill: var(--accent-bg-cl);
 
-  transition-property: opacity;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
