@@ -1096,7 +1096,6 @@ outline: none;
 
 .button-backdrop:focus,
 .button-backdrop:hover{
-  border: 1px solid var(--accent-color);
   color: var(--accent-color);
   fill: currentColor;
 }
