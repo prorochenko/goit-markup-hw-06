@@ -610,40 +610,52 @@
   
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button class="button-backdrop" data-modal-close><svg class="social-icon-backdrop" width="11" height="11">
+    <button class="button-backdrop" data-modal-close>
+      <svg class="social-icon-backdrop" width="11" height="11">
       <use href="./images/sprite.svg#icon-Vector"></use>
     </svg></button>
       <form action="" class="js-speaker-form">
         <strong class="title-form">Залиште свої дані, ми вам передзвонимо</strong>
         <div class="form-field">
           <label class="name-field" for="name">Ім'я</label>
-          <input class="labelfield"type="text" name="name" id="name" autocomplete="given-name" autofocus />
+          <input class="labelfield"type="text" name="name" id="name" 
+          autocomplete="given-name" autofocus />
+          <svg class="register-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
+          </svg>
           </div>
           <div class="form-field">
           <label class="name-field" for="tel">Телефон</label>
           <input class="labelfield" type="tel" name="tel" id="tel" autocomplete="tel"/>
-          </div>
+          <svg class="register-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+          </svg>
+        </div>
           <div class="form-field">
             <label class="name-field" for="mail">Пошта</label>
           <input class="labelfield" type="email" name="mail" id="mail" autocomplete="email"/>
+          <svg class="register-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-phone-black-18dp-1""></use>
+          </svg>
         </div>
         <div class="form-field">
           <label class="name-field" for="comment">Коментар</label>
           <textarea class="labelfield" name="comment" id="comment" cols="10" rows="10" placeholder="Введіть текст"></textarea>  
         </div>
         <div class="termscondition">
+          <label class="register-agreement">
+            <input class="register-checkbox visually-hidden" type="checkbox" name="user-agreement">
+            
+            <svg class="register-agreement-icon" width="16" height="15">
+              <use class="icon-uncheck" href="./images/sprite.svg#icon-unchecked"></use>
+              <use class="icon-check" href="./images/sprite.svg#icon-icon-check"></use>
+            </svg>
 
-          <label class="checkbox">
-            <input class="checkboxbox" type="checkbox" name="terms">
-            <!-- <svg class="social-icon-footer" width="20" height="20">
-              <use href="./images/sprite.svg#icon-linkedin"></use>
-            </svg> -->
-            <span>Погоджуюся з розсилкою та приймаю <a class="link-term" href="google.com" target="_blank">Умови договору</a></span>
+            <span class="register-agreement-text">Погоджуюся з розсилкою та приймаю 
+              <a class="link-term" href="google.com" target="_blank">
+              Умови договору</a></span>
           </label>
-          
-        <!-- <input class="checkboxbox" type="checkbox" name="terms" id="terms">
-        <label class="checkbox" for="terms">Погоджуюся з розсилкою та приймаю <a class="link-term" href="google.com">Умови договору</a></label> -->
-        </div>
+          </div>
 
         <button class="button field" type="submit">Відправити</button>
 
