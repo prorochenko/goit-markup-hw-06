@@ -996,13 +996,15 @@ textarea.labelfield{
 }
 
 .register-checkbox:focus + .register-agreement-icon {
-  outline: 2px solid var(--accent-txt-cl);
+  outline: 2px solid var(--accent-color);
   outline-offset: 1px;
   border-radius: 2px;
 }
 
 .icon-uncheck {
-  transition: opacity var(--anim-fast);
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-checkbox:checked + .register-agreement-icon > .icon-uncheck {
@@ -1013,7 +1015,9 @@ textarea.labelfield{
   opacity: 0;
   fill: var(--accent-bg-cl);
 
-  transition: opacity var(--anim-fast);
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-checkbox:checked + .register-agreement-icon > .icon-check {
@@ -1030,7 +1034,7 @@ textarea.labelfield{
 }
 
 .register-agreement-link {
-  color: var(--accent-txt-cl);
+  color: var(--accent-color);
   text-underline-position: under;
 }
 
